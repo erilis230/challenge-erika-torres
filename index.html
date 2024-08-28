@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page1" class="container">
+        <div class="textarea-section">
+            <p class="instruction-text">Ingrese el texto aquí</p>
+            <textarea id="inputText" rows="5" placeholder=></textarea>
+            <p class="validation-message">Solo letras minúsculas y sin acentos</p>
+            <div class="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="container-image">
+            <img src="Muñeco.png" alt="Imagen de un joven mirando un diamante con una lupa">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </div>
+
+    <!-- Página de resultados -->
+    <div id="page2" class="container" style="display: none;">
+        <div class="textarea-section">
+            <textarea id="outputText" rows="5"></textarea>
+            <p class="validation-message">Solo letras minúsculas y sin acentos</p>
+            <div class="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="container-image">
+            <textarea id="outputText" rows="5"></textarea>
+            <div class="buttons">
+                <button onclick="copyText()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
